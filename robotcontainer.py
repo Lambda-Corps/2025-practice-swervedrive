@@ -41,7 +41,7 @@ class RobotContainer:
 
         # Setting up bindings for necessary control of the swerve drive platform
         self._drive = (
-            swerve.requests.FieldCentric()
+            swerve.requests.RobotCentric()
             .with_rotational_deadband(
                 self._max_angular_rate * 0.075
             )  # Add a 10% deadband
